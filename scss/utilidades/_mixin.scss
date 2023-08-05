@@ -1,0 +1,34 @@
+@mixin estilos-main($display, $text-align){
+    display: $display;
+    text-align: $text-align;
+}
+
+
+@mixin reset($margin, $padding, $box-sizing){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin font($font-family){
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin espaciado-titulo-esquinado($margin-top, $margin-bottom, $margin-left){
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+@mixin tamaño-texto($font-size){
+    font-size: 40px;
+} 
+
+@mixin espaciado-titulo-centrado($margin-top, $margin-bottom, $text-align){
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+    
+
+    

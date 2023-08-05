@@ -1,0 +1,55 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+//reset
+
+*{
+    @include reset(margin, padding, box-sizing);
+}
+
+// Estilos de Servicios
+
+/* Main Servicios */
+.main-servicios{
+    @include estilos-main(grid, center);  
+}
+
+.titulo-servicios{
+    @include espaciado-titulo-esquinado(margin-top, margin-bottom, margin-left);
+    @extend %font;
+}
+
+.subtitulos-servicios{
+    margin-left: 40px;
+    margin-top: 50px ;
+    margin-bottom: 30px;
+} 
+
+.imagenes-servicios{
+    margin-left: 330px;
+}
+
+.textos-servicios{
+    margin-top: 25px;
+    margin-bottom: 75px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+/* mq  tablet (servicios) */
+
+@media screen and (max-width:1525px) {
+    .main-servicios  .imagenes-servicios{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}
+
+/* mq celular  (servicios) */
+
+@media screen and (max-width:660px) {
+    .main-productos {
+        flex-direction: column;
+    }
+}

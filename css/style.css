@@ -1,0 +1,236 @@
+.titulo-home, .titulo-contactanos, .titulo-nosotros, .titulo-productos, .titulo-servicios {
+  font-family: 'Raleway', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Main HOME */
+.main-home {
+  display: grid;
+  text-align: center; }
+
+.titulo-home {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; }
+
+.textoimg-home {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px; }
+
+.texto-home {
+  margin-left: 55px;
+  margin-right: 55px;
+  font-size: 40px;
+  font-family: 'Victor Mono', monospace; }
+
+.img-home {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+/* Footer */
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px; }
+
+/* mq  tablet (home) */
+@media screen and (max-width: 1120px) {
+  .main-home .textoimg-home {
+    flex-direction: column; } }
+
+/* mq celular  (home) */
+@media screen and (max-width: 660px) {
+  .main-home .textoimg-home {
+    flex-direction: column; } }
+
+.titulo-home, .titulo-contactanos, .titulo-nosotros, .titulo-productos, .titulo-servicios {
+  font-family: 'Raleway', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Main CONTACTANOS */
+.main-contactanos {
+  display: grid;
+  text-align: center; }
+
+.titulo-contactanos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px; }
+
+.encontranos-contactanos {
+  margin-left: 20px; }
+
+.contactos-contactanos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Kanit', sans-serif; }
+
+.iframe-img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px; }
+
+.ubi-contactanos {
+  margin-left: 30px; }
+
+/* mq  tablet (contactanos) */
+@media screen and (max-width: 1350px) {
+  .main-home .textoimg-home {
+    flex-direction: column; } }
+
+/* mq celular  (contactanos) */
+@media screen and (max-width: 660px) {
+  .main-contactanos {
+    flex-direction: column; } }
+
+.titulo-home, .titulo-contactanos, .titulo-nosotros, .titulo-productos, .titulo-servicios {
+  font-family: 'Raleway', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Main NOSOTROS */
+.main-nosotros {
+  display: grid;
+  text-align: center; }
+
+.titulo-nosotros {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px; }
+
+.imgtxt-nosotros {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px; }
+
+.img-nosotros {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.texto-nosotros {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 30px; }
+
+/* mq  tablet (nosotros) */
+@media screen and (max-width: 1120px) {
+  .imgtxt-nosotros {
+    flex-direction: column; } }
+
+/* mq celular  (nosotros) */
+@media screen and (max-width: 660px) {
+  .imgtxt-nosotros {
+    flex-direction: column; } }
+
+.titulo-home, .titulo-contactanos, .titulo-nosotros, .titulo-productos, .titulo-servicios {
+  font-family: 'Raleway', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Main PRODUCTOS */
+.main-productos {
+  display: grid;
+  text-align: center; }
+
+.titulo-productos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; }
+
+.imagenes-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+
+.instrumentos {
+  padding: 80px; }
+
+.boton-comprar {
+  background-color: #2B0548;
+  color: white;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.boton-comprar:hover {
+  color: #2B0548;
+  background-color: white; }
+
+/* mq  tablet (productos) */
+@media screen and (max-width: 1340px) {
+  .main-productos {
+    flex-direction: column; } }
+
+/* mq celular  (productos) */
+@media screen and (max-width: 660px) {
+  .main-productos {
+    flex-direction: column; } }
+
+.titulo-home, .titulo-contactanos, .titulo-nosotros, .titulo-productos, .titulo-servicios {
+  font-family: 'Raleway', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Main Servicios */
+.main-servicios {
+  display: grid;
+  text-align: center; }
+
+.titulo-servicios {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px; }
+
+.subtitulos-servicios {
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+.imagenes-servicios {
+  margin-left: 330px; }
+
+.textos-servicios {
+  margin-top: 25px;
+  margin-bottom: 75px;
+  margin-left: 40px;
+  font-size: 20px; }
+
+/* mq  tablet (servicios) */
+@media screen and (max-width: 1525px) {
+  .main-servicios .imagenes-servicios {
+    flex-direction: column;
+    margin-left: 10px; } }
+
+/* mq celular  (servicios) */
+@media screen and (max-width: 660px) {
+  .main-productos {
+    flex-direction: column; } }

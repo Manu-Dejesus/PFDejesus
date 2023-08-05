@@ -1,0 +1,74 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+//reset
+
+*{
+    @include reset(margin, padding, box-sizing);
+}
+
+// Estilos de Home
+
+/* Main HOME */
+
+.main-home{  
+    @include estilos-main(grid, center); 
+}
+
+.titulo-home{
+    @include espaciado-titulo-centrado(margin-top, margin-bottom, text-align);
+    @extend %font;
+}
+
+.textoimg-home{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.texto-home{
+    margin-left: 55px;
+    margin-right: 55px;
+    @include tamaño-texto(font-size);
+    font-family: 'Victor Mono', monospace;
+}
+
+
+.img-home{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Footer */
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+
+/* mq  tablet (home) */
+
+@media screen and (max-width:1120px) {
+    .main-home .textoimg-home{
+        flex-direction: column;
+    }
+}
+
+/* mq celular  (home) */
+
+@media screen and (max-width:660px) {
+    .main-home .textoimg-home{
+        flex-direction: column;
+    }
+}
+
+
+
+
+    
+
+

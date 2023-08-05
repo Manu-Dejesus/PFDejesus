@@ -1,0 +1,56 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+//reset
+
+*{
+    @include reset(margin, padding, box-sizing);
+}
+
+// Estilos de Nosotros
+
+/* Main NOSOTROS */
+
+.main-nosotros{
+    @include estilos-main(grid, center); 
+}
+
+.titulo-nosotros{
+    @include espaciado-titulo-esquinado(margin-top, margin-bottom, margin-left);
+    @extend %font;
+}
+
+.imgtxt-nosotros{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.img-nosotros{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.texto-nosotros{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+/* mq  tablet (nosotros) */
+
+@media screen and (max-width:1120px) {
+    .imgtxt-nosotros {
+        flex-direction: column;
+    }
+}
+
+/* mq celular  (nosotros) */
+
+@media screen and (max-width:660px) {
+    .imgtxt-nosotros {
+        flex-direction: column;
+    }
+}
+

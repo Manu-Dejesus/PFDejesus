@@ -1,0 +1,63 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+//reset
+
+*{
+    @include reset(margin, padding, box-sizing);
+}
+
+// Estilos de Contactanos
+
+/* Main CONTACTANOS */
+.main-contactanos{
+    @include estilos-main(grid, center); 
+}
+
+.titulo-contactanos{
+    @include espaciado-titulo-esquinado(margin-top, margin-bottom, margin-left);
+    @extend %font;
+}
+
+.encontranos-contactanos{
+    margin-left: 20px;
+}
+
+.contactos-contactanos{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   font-family: 'Kanit', sans-serif;
+}
+
+.iframe-img{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+
+.ubi-contactanos{
+    margin-left: 30px;
+}
+
+/* mq  tablet (contactanos) */
+
+@media screen and (max-width:1350px) {
+    .main-home .textoimg-home{
+        flex-direction: column;
+    }
+}
+
+/* mq celular  (contactanos) */
+
+@media screen and (max-width:660px) {
+    .main-contactanos {
+        flex-direction: column;
+    }
+}
+
